@@ -1,0 +1,20 @@
+<div class="container p-3">
+    <div class="row">
+        <div class="col-md-9 offset-md-1">
+            <div class="mat-elevation-z4">
+                <mat-toolbar color="primary">All Users</mat-toolbar>
+                <mat-list>
+                    <mat-list-item *ngFor="let user of users|async;let i=index">
+                    <mat-icon mat-list-icon *ngIf="user.role=='Admin'">supervisor_account</mat-icon>
+                    <mat-icon mat-list-icon *ngIf="user.role=='User'">person</mat-icon>
+                    <div mat-line> {{user.firstName}} {{user.lastName}}</div>
+                    <div mat-line>{{user.username}}</div>
+                    <button mat-icon-button color="warn" (click)="removeUser(i,user)">
+                        <mat-icon>remove_circle_outline</mat-icon>
+                     </button>
+                    </mat-list-item>
+                </mat-list>
+            </div>
+        </div>
+    </div>
+</div>

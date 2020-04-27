@@ -1,0 +1,35 @@
+<ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
+    <footer class="footer-basic-centered hide-on-small-only mt-2">
+      <p class="footer-company-motto">Starter App for Future angular projects</p>
+  
+      <p class="footer-links">
+        <a href="https://www.linkedin.com/in/shubham-gogate-b9aa88171/"
+          >Shubham Gogate</a
+        >
+      </p>
+  
+      <p class="footer-company-name">StarterApp &copy; 2020</p>
+  
+      <!-- <button mat-raised-button color="accent" (click)="open()">
+        HELP US BUILD MORE
+      </button> -->
+    </footer>
+  </ng-template>
+  <ng-template #bigScreen>
+    <footer class="footer-basic-centered hide-on-small-only mt-2">
+      <p class="footer-company-motto">Starter App for Future angular projects</p>
+  
+      <p class="footer-links">
+        <a
+          class="m-3"
+          href="https://www.linkedin.com/in/shubham-gogate-b9aa88171/"
+          >Shubham Gogate</a
+        >
+      </p>
+  
+      <p class="footer-company-name">StarterApp &copy; 2020</p>
+  
+      
+    </footer>
+  </ng-template>
+  
